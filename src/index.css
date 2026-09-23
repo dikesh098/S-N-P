@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-ivory font-sans text-ink antialiased; }
+  h1, h2, h3, h4 { @apply font-serif text-maroon; }
+  :focus-visible { outline: 3px solid #C89B3C; outline-offset: 3px; border-radius: 4px; }
+  ::selection { background: #F4E6C4; color: #3F0C17; }
+  /* Devanagari needs slightly more line height than Latin */
+  :lang(hi) body, :lang(mr) body { line-height: 1.75; }
+  :lang(hi) h1, :lang(hi) h2, :lang(hi) h3, :lang(mr) h1, :lang(mr) h2, :lang(mr) h3 { line-height: 1.35; }
+  img { @apply max-w-full; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .section { @apply py-16 sm:py-24; }
+  .btn { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full px-6 py-3 text-[15px] font-medium transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-60; }
+  .btn-primary { @apply btn bg-maroon text-ivory hover:bg-maroon-700; }
+  .btn-saffron { @apply btn bg-saffron text-maroon-900 hover:bg-[#F08D36]; }
+  .btn-outline { @apply btn border border-maroon/40 text-maroon hover:bg-maroon hover:text-ivory; }
+  .btn-gold { @apply btn border border-gold/70 bg-transparent text-gold-100 hover:bg-gold/20; }
+  .chip { @apply inline-flex min-h-[40px] items-center rounded-full border border-gold/50 bg-transparent px-4 text-sm text-maroon transition-colors hover:bg-gold-100; }
+  .chip[aria-pressed='true'] { @apply border-maroon bg-maroon text-ivory; }
+  .paper { @apply border border-gold/40 bg-[#FFFDF8] shadow-card; }
+  .field { @apply w-full rounded-md border border-maroon/25 bg-white px-4 py-3 text-base text-ink placeholder:text-ink/40 focus:border-maroon focus:outline-none focus:ring-2 focus:ring-gold/60; }
+  .label { @apply mb-1.5 block text-sm font-medium text-maroon-700; }
+  .prose-devotional { @apply max-w-prose font-serif text-[17px] leading-8 text-ink/85; }
+
+  /* Mehrab (temple arch): the recurring shape of this site */
+  .arch { border-radius: 999px 999px 10px 10px; }
+  .arch-frame { @apply arch border border-gold/70 bg-ivory p-2 shadow-soft; }
+  .arch-frame > .arch-inner { @apply arch overflow-hidden bg-cream; }
+
+  .temple-border {
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Cpath d='M0 14Q14 -8 28 14' fill='none' stroke='%23C89B3C' stroke-width='1.2'/%3E%3Ccircle cx='14' cy='5.5' r='1.5' fill='%23C89B3C'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+  }
+  .temple-border-dark {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Cpath d='M0 14Q14 -8 28 14' fill='none' stroke='%23C89B3C' stroke-opacity='.55' stroke-width='1.2'/%3E%3Ccircle cx='14' cy='5.5' r='1.5' fill='%23C89B3C' fill-opacity='.6'/%3E%3C/svg%3E");
+  }
+
+  /* Petals: pure CSS, few in number, hidden for reduced motion */
+  .petal {
+    position: absolute; top: -8%;
+    width: var(--s, 12px); height: calc(var(--s, 12px) * 1.5);
+    border-radius: 70% 0 70% 0;
+    background: var(--c, #E67E22);
+    opacity: 0;
+    animation: fall var(--dur, 16s) linear var(--delay, 0s) infinite;
+    will-change: transform;
+  }
+  .glow-warm { background: radial-gradient(closest-side, rgba(200,155,60,0.32), rgba(200,155,60,0)); }
+}
+
+@layer utilities {
+  .scrollbar-none { scrollbar-width: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  .pt-safe-nav { padding-top: 5.25rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  .petal { display: none; }
+}
+
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { background: white; }
+}

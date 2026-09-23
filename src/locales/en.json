@@ -1,0 +1,77 @@
+{
+  "nav": { "home": "Home", "about": "About", "journey": "Journey", "navratri": "Navratri", "programs": "Programs", "gallery": "Gallery", "committee": "Committee", "todayCta": "Today's Program" },
+  "hero": {
+    "greeting": "Jai Maa Sharda",
+    "tagline": "Faith • Tradition • Togetherness",
+    "explore": "Explore the Celebration",
+    "today": "Today's Program",
+    "journey": "Our Journey"
+  },
+  "countdown": { "title": "Navratri Begins In", "live": "Navratri Is Live — Day {{day}}", "over": "This year's Navratri has concluded", "days": "Days", "hours": "Hours", "minutes": "Minutes", "seconds": "Seconds" },
+  "today": {
+    "label": "Today's Darshan",
+    "day": "Day {{n}}",
+    "upNext": "Next: Day {{n}}",
+    "viewProgram": "View Full Program",
+    "aarti": "Aarti", "cultural": "Cultural Program", "prasad": "Prasad", "other": "Programme",
+    "noProgram": "The day's programme will be published here soon."
+  },
+  "about": {
+    "label": "Our Story",
+    "title": "A Journey of Faith & Togetherness",
+    "purposeLabel": "Our Purpose", "purposeTitle": "Why We Celebrate",
+    "purposeBody": "Every year, our community comes together to install Maa Sharda and celebrate nine days of devotion, culture and community spirit — a tradition carried forward with love by every generation.",
+    "valuesLabel": "Our Values", "valuesTitle": "What Guides Us",
+    "values": { "faith": "Faith", "unity": "Unity", "tradition": "Tradition", "culture": "Culture", "service": "Service", "togetherness": "Togetherness" }
+  },
+  "journey": { "label": "Our Journey", "title": "Every Year, A New Memory", "viewGallery": "View Gallery", "empty": "Memories from this year will appear here soon." },
+  "navratriPage": {
+    "label": "Nine Days of Devotion", "title": "Navratri Schedule",
+    "day": "Day {{n}}", "viewDetails": "View Details", "back": "All Days",
+    "empty": "The full schedule will be published here soon."
+  },
+  "programsPage": { "label": "Cultural Programs", "title": "The Celebration Comes Alive", "empty": "Programs for this year will be announced here soon.", "categories": { "all": "All", "garba": "Garba", "dandiya": "Dandiya", "bhajan": "Bhajan", "dance": "Dance", "singing": "Singing", "children": "Children's Activities", "competition": "Competitions", "community": "Community Events" } },
+  "gallery": {
+    "label": "Memories", "title": "Photo Gallery", "empty": "Photographs will appear here as they are added.",
+    "loadMore": "Load More", "allYears": "All Years", "allCategories": "All",
+    "categories": { "pratima": "Pratima", "pandal": "Pandal", "aarti": "Aarti", "garba": "Garba", "cultural": "Cultural Programs", "community": "Community", "volunteers": "Volunteers", "visarjan": "Visarjan" }
+  },
+  "videos": { "label": "Watch", "title": "Video Gallery", "empty": "Videos will be added here soon." },
+  "committee": { "label": "Our Committee", "title": "The People Behind the Celebration", "empty": "Committee details will be published here soon.",
+    "groups": { "office": "Office Bearers", "organizing": "Organizing Members", "cultural": "Cultural Team", "volunteer": "Volunteer Team", "women": "Women's Committee", "youth": "Youth Committee" } },
+  "community": {
+    "label": "More Than a Celebration", "title": "Community Activities",
+    "intro": "Every year, the festival brings families, friends and generations together — and our work continues beyond Navratri.",
+    "empty": "Activities will be listed here as they happen.",
+    "pillars": { "community": "Community", "devotion": "Devotion", "tradition": "Tradition", "togetherness": "Togetherness" }
+  },
+  "volunteer": {
+    "label": "Join Us", "title": "Become Part of the Celebration",
+    "intro": "Every celebration is made possible by people who come together to serve. We would love to have you with us.",
+    "cta": "Volunteer With Us",
+    "form": { "name": "Full Name", "mobile": "Mobile Number", "email": "Email (optional)", "area": "Area / Block", "activity": "How would you like to help?", "dates": "Available Dates", "message": "Message (optional)", "submit": "Submit", "submitting": "Submitting…", "success": "Thank you — we've received your registration and will be in touch.", "error": "Something went wrong. Please try again in a moment." }
+  },
+  "contribute": {
+    "label": "Support Us", "title": "Contribute to the Celebration",
+    "intro": "Your contribution, big or small, helps us bring this celebration to life for the whole community.",
+    "upi": "UPI ID", "bank": "Bank Details", "instructions": "Please share a screenshot of your contribution with the committee for your records. Thank you for your generosity.",
+    "noPayments": "We do not use any online payment gateway. All contributions are collected directly and transparently by the committee."
+  },
+  "announcements": { "label": "Updates", "title": "Announcements", "empty": "There are no announcements right now.", "viewAll": "View All" },
+  "contact": {
+    "label": "Get in Touch", "title": "Contact Us",
+    "venue": "Venue", "phone": "Phone", "email": "Email", "map": "Open in Maps",
+    "form": { "name": "Full Name", "mobile": "Mobile Number (optional)", "email": "Email (optional)", "message": "Message", "submit": "Send Message", "submitting": "Sending…", "success": "Thank you — your message has been received.", "error": "Something went wrong. Please try again in a moment." }
+  },
+  "qr": { "title": "Welcome", "subtitle": "Everything about this year's celebration, in one place." },
+  "footer": {
+    "statement": "A community celebration of devotion, culture and togetherness.",
+    "quickLinks": "Quick Links", "connect": "Connect", "contact": "Contact",
+    "rights": "All rights reserved.", "madeWith": "Built for the community, with devotion."
+  },
+  "common": {
+    "readMore": "Read More", "backHome": "Back to Home", "loading": "Loading…", "whatsapp": "Chat on WhatsApp",
+    "notFoundTitle": "Page Not Found", "notFoundBody": "The page you're looking for doesn't exist.",
+    "required": "This field is required", "day": "Day", "year": "Year"
+  }
+}
